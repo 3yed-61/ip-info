@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Geolocation Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind-dark.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="info-container" class="max-w-sm mx-auto bg-gray-800 rounded-lg shadow-lg p-4">
+    <h1 class="text-2xl mb-4">Your IP Information</h1>
+    <img id="countryFlag" alt="Country Flag">
+    <p><strong>IP Address:</strong> <span id="ipAddress"></span></p>
+    <button id="copyIPAddressBtn" class="bg-accent-color hover:bg-accent-color-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Copy IP Address</button>
+    <hr>
+    <div class="info-row">
+        <div class="label">
+            <strong>Country:</strong>
+        </div>
+        <div class="value" id="country"></div>
+    </div>
+    <div class="info-row">
+        <div class="label">
+            <strong>State/Province:</strong>
+        </div>
+        <div class="value" id="stateProv"></div>
+    </div>
+    <div class="info-row">
+        <div class="label">
+            <strong>City:</strong>
+        </div>
+        <div class="value" id="city"></div>
+    </div>
+    <hr>
+    <div class="info-row">
+        <div class="label">
+            <strong>Zip Code:</strong>
+        </div>
+        <div class="value" id="zipcode"></div>
+    </div>
+    <div class="info-row">
+        <div class="label">
+            <strong>Calling Code:</strong>
+        </div>
+        <div class="value" id="callingCode"></div>
+    </div>
+    <div class="info-row">
+        <div class="label">
+            <strong>Country Code :</strong>
+        </div>
+        <div class="value" id="countryCode2"></div>
+    </div>
+    <hr>
+    <div class="info-row">
+        <div class="label">
+            <strong>ISP:</strong>
+        </div>
+        <div class="value" id="isp"></div>
+    </div>
+    <div class="info-row">
+        <div class="label">
+            <strong>Organization:</strong>
+        </div>
+        <div class="value" id="organization"></div>
+    </div>
+    <hr>
+    <div class="info-row">
+        <div class="label">
+            <strong>Time Zone:</strong>
+        </div>
+        <div class="value" id="timeZone"></div>
+    </div>
+    <p class="mt-4">Copyright © 2023 <a href="https://i.3yed.online/" target="_blank" class="text-accent-color hover:text-accent-color-dark powered-by">3YED</a></p>
+</div>
+<button id="getIPInfoBtn" class="bg-accent-color hover:bg-accent-color-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Get My IP Info</button>
+<script src="app.js"></script>
+</body>
+</html>
